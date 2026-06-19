@@ -102,19 +102,19 @@ Identify:
 
 ### Requirement Gaps
 
-1.
-2.
-3.
+1. OTP Less than 6 digits
+2. OTP More than 6 digits
+3. OTP กรอกได้เกิน 6 digits
 
 ### Assumptions
 
-1.
-2.
-3.
+1. OTP Less than 6 digits
+2. OTP More than 6 digits
+3. OTP กรอกได้เกิน 6 digits
 
 ### Risks
 
-1.
+1. OTP กรอกได้เกิน 6 digits อาจจะทำมีการกรอก OTP เกิน
 2.
 3.
 
