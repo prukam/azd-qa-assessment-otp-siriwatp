@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZD OTP Verification</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>OTP Verification</h1>
+      <p class="subtitle">Enter the OTP to continue to eKYC.</p>
+
+      <label for="otp-input">OTP</label>
+      <input
+        id="otp-input"
+        class="otp-input ng-pristine ng-valid"
+        data-testid="otp-input"
+        placeholder="Enter 6-digit OTP"
+        maxlength="8"
+        autocomplete="one-time-code"
+      />
+
+      <div class="actions">
+        <button
+          id="verify-button"
+          class="btn btn-primary verify-button"
+          data-testid="verify-button"
+          type="button"
+        >
+          Verify
+        </button>
+
+        <!-- Hidden duplicate button intentionally added to catch weak text-based locators -->
+        <button class="btn hidden-verify-button" type="button" style="display:none">
+          Verify
+        </button>
+      </div>
+
+      <div
+        id="result"
+        class="result"
+        data-testid="otp-result"
+        role="status"
+        aria-live="polite"
+      ></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
